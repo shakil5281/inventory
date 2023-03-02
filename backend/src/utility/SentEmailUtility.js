@@ -3,11 +3,11 @@ var nodemailer = require('nodemailer');
 const SendEmailUtility= async (EmailTo, EmailText, EmailSubject) => {
 
     let transporter = nodemailer.createTransport({
-        host: 'mail.healthxpart.com',
+        host: 'mail.kitchenground.com',
         port: 465,
         secure: true,
         auth: {
-            user: "shakil@healthxpart.com",
+            user: "shakil@kitchenground.com",
             pass: 'shakil52814542A'
         },tls: {
             rejectUnauthorized: false
@@ -16,7 +16,7 @@ const SendEmailUtility= async (EmailTo, EmailText, EmailSubject) => {
 
 
     let mailOptions = {
-        from: 'Inventory <shakil@healthxpart.com>',
+        from: 'Inventory <shakil@kitchenground.com>',
         to: EmailTo,
         subject: EmailSubject,
         text: EmailText
